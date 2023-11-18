@@ -1,0 +1,5 @@
+- Create express server
+- Create product resources
+- Create vite app
+- Create dashboard
+- Create product management
