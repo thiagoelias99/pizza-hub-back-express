@@ -3,6 +3,7 @@ import cors from 'cors'
 import morgan from 'morgan'
 
 import router from './routes'
+import errorHandler from './middlewares/errorHandler'
 
 const server = express()
 server.use(express.json())
@@ -19,6 +20,9 @@ server.use(morgan('dev'))
 
 //Routes
 server.use('/api/v1', router)
+
+//Error handler
+server.use(errorHandler)
 
 const port = 3333
 

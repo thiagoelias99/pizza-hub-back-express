@@ -1,5 +1,7 @@
-- Create express server
-- Create product resources
+- Create express server - OK
+- Create product resources - OK
+- Implement dev database
 - Create vite app
 - Create dashboard
 - Create product management
+- Deploy
