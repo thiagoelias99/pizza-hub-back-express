@@ -1,0 +1,192 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "PizzaHub",
+    "dateExported": "2023-11-20T13:25:54.062Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "33cc0c64-85e4-4f8e-a8f5-eb23c1403a09",
+            "name": "Products",
+            "containerId": "",
+            "created": "2023-11-19T12:55:40.389Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "1527f946-4971-41a5-bf49-440de5ecd16e",
+            "name": "Units",
+            "containerId": "",
+            "created": "2023-11-19T12:55:47.126Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "1b9e990c-d5a9-4fd3-a565-34932df064c2",
+            "name": "Families",
+            "containerId": "1527f946-4971-41a5-bf49-440de5ecd16e",
+            "created": "2023-11-19T13:36:30.813Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "c02b01e2-59f9-4470-b6f9-c51ec45a3e5e",
+            "colId": "15e8961b-bf9a-4ca9-8baf-4718c5f813a6",
+            "containerId": "33cc0c64-85e4-4f8e-a8f5-eb23c1403a09",
+            "name": "Post Product",
+            "url": "http://localhost:3333/api/v1/products",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-11-19T12:55:55.606Z",
+            "modified": "2023-11-19T18:51:49.019Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"description\": \"Queijo\",\n  \"value\": 10.99,\n  \"unitFamilyId\": \"452853fd-f0a4-4508-b59f-8a6b61f6001e\",\n  \"unitId\": \"69d4e6d7-8a09-45a3-a7b9-b1414487e7a8\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8591215d-6c78-4b7e-ab54-58e1d21e26ae",
+            "colId": "15e8961b-bf9a-4ca9-8baf-4718c5f813a6",
+            "containerId": "1b9e990c-d5a9-4fd3-a565-34932df064c2",
+            "name": "Post",
+            "url": "http://localhost:3333/api/v1/families",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-11-19T12:58:33.662Z",
+            "modified": "2023-11-19T15:02:19.793Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"description\": \"Weight\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4ff10095-93c5-446e-a8cd-6d33bd6ad91c",
+            "colId": "15e8961b-bf9a-4ca9-8baf-4718c5f813a6",
+            "containerId": "1527f946-4971-41a5-bf49-440de5ecd16e",
+            "name": "Post",
+            "url": "http://localhost:3333/api/v1/units",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-11-19T12:58:14.675Z",
+            "modified": "2023-11-19T18:51:32.704Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"unit\": \"kg\",\n  \"unitFamilyId\": \"18673451-d03d-431c-b426-0524c7bc42fe\",\n  \"isDefault\": true,\n  \"conversionFactor\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3b82a3cc-771e-45d9-b12a-d705c33999a1",
+            "colId": "15e8961b-bf9a-4ca9-8baf-4718c5f813a6",
+            "containerId": "1b9e990c-d5a9-4fd3-a565-34932df064c2",
+            "name": "GetAll",
+            "url": "http://localhost:3333/api/v1/families",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-11-19T13:37:05.061Z",
+            "modified": "2023-11-19T15:03:15.911Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0eb5974b-cb6b-410e-a1e2-a342ac8ba79c",
+            "colId": "15e8961b-bf9a-4ca9-8baf-4718c5f813a6",
+            "containerId": "33cc0c64-85e4-4f8e-a8f5-eb23c1403a09",
+            "name": "Get All Products",
+            "url": "http://localhost:3333/api/v1/products",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-11-19T18:47:38.833Z",
+            "modified": "2023-11-19T18:47:55.161Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"description\": \"Queijo\",\n  \"value\": 10.99,\n  \"unitFamilyId\": \"\",\n  \"unitId\": \"\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5d3a7762-25f6-4b5e-8797-46662ab1df26",
+            "colId": "15e8961b-bf9a-4ca9-8baf-4718c5f813a6",
+            "containerId": "1b9e990c-d5a9-4fd3-a565-34932df064c2",
+            "name": "GetById",
+            "url": "http://localhost:3333/api/v1/families/aa439933-8945-4dd4-8af2-1408c0c36b83",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-11-19T13:37:29.027Z",
+            "modified": "2023-11-19T15:19:17.775Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "85081ea3-ab33-41a6-b388-c5d832d70917",
+            "colId": "15e8961b-bf9a-4ca9-8baf-4718c5f813a6",
+            "containerId": "1527f946-4971-41a5-bf49-440de5ecd16e",
+            "name": "GetAll",
+            "url": "http://localhost:3333/api/v1/units",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-11-19T15:20:04.217Z",
+            "modified": "2023-11-19T15:20:49.968Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"unit\": \"kg\",\n  \"unitFamilyId\": \"6830c8c0-f45e-4e2e-b09c-cf2e5ae64df3\",\n  \"isDefault\": true,\n  \"conversionFactor\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "fff67fb5-3e30-4ea5-b9c9-7696c5deead2",
+            "colId": "15e8961b-bf9a-4ca9-8baf-4718c5f813a6",
+            "containerId": "33cc0c64-85e4-4f8e-a8f5-eb23c1403a09",
+            "name": "Get Product By Id",
+            "url": "http://localhost:3333/api/v1/products/fe9bf1a0-1304-4002-a316-70079851fc83",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-11-19T18:47:59.671Z",
+            "modified": "2023-11-19T18:52:58.744Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"description\": \"Queijo\",\n  \"value\": 10.99,\n  \"unitFamilyId\": \"\",\n  \"unitId\": \"\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8cad7ff8-cdf4-472b-9df4-532d15446e46",
+            "colId": "15e8961b-bf9a-4ca9-8baf-4718c5f813a6",
+            "containerId": "1527f946-4971-41a5-bf49-440de5ecd16e",
+            "name": "GetById",
+            "url": "http://localhost:3333/api/v1/units/199ca0d9-b65e-490b-a1e3-e02fbf44b925",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-11-19T15:20:29.779Z",
+            "modified": "2023-11-19T15:21:58.282Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"unit\": \"kg\",\n  \"unitFamilyId\": \"6830c8c0-f45e-4e2e-b09c-cf2e5ae64df3\",\n  \"isDefault\": true,\n  \"conversionFactor\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

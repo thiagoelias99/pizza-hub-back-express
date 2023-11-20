@@ -1,7 +1,9 @@
 - Create express server - OK
 - Create product resources - OK
-- Implement dev database
+- Implement dev database with Knex - OK
 - Create vite app
 - Create dashboard
 - Create product management
+- Implements tests for api
+- Implements tests fot frontend
 - Deploy

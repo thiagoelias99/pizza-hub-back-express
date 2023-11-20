@@ -1,10 +1,10 @@
 import { randomUUID } from 'node:crypto'
 import { TUnitCreateDto, TUnitFamilyCreateDto } from '../server/dto/UnitDto'
 import { TUnitFamily } from '../models/UnitFamily'
-import UnitRepository from '../repositories/UnitsRepository'
+import UnitsRepository from '../infra/database/knex/repositories/UnitsRepository'
 import Unit from '../models/Unit'
 
-const unitRepository = new UnitRepository()
+const unitRepository = new UnitsRepository()
 
 export default class UnitsServices {
     static async postFamily(dto: TUnitFamilyCreateDto) {

@@ -1,8 +1,8 @@
 import { randomUUID } from 'node:crypto'
 import { IdNotFoundError } from '../errors'
 import Product, { TProduct } from '../models/Product'
-import ProductRepository from '../repositories/ProductRepository'
-import UnitRepository from '../repositories/UnitsRepository'
+import ProductRepository from '../infra/database/knex/repositories/ProductRepository'
+import UnitRepository from '../infra/database/knex/repositories/UnitsRepository'
 import { TProductCreateDto } from '../server/dto/ProductDto'
 
 
