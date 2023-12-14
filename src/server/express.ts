@@ -11,7 +11,7 @@ server.use(express.urlencoded({ extended: false }))
 
 //Cors configuration
 const corsOptions = {
-    origin: 'http://localhost:3000',
+    origin: ['http://localhost:3000','http://localhost:5173'],
 }
 server.use(cors(corsOptions))
 
